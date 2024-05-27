@@ -1,0 +1,158 @@
+[gd_scene load_steps=8 format=3 uid="uid://dr6kc7trs07er"]
+
+[ext_resource type="PackedScene" uid="uid://b13jit1a25s8r" path="res://scenes/player.tscn" id="1_fkish"]
+[ext_resource type="PackedScene" uid="uid://dbucj6jmps4c4" path="res://scenes/tree.tscn" id="2_olgjt"]
+[ext_resource type="PackedScene" uid="uid://bklcxq23x3nc2" path="res://scenes/slime.tscn" id="3_bkryk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_knfvo"]
+size = Vector2(1165, 58)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nh86o"]
+size = Vector2(63, 659)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iychj"]
+size = Vector2(61, 652)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w21qb"]
+size = Vector2(1117, 56)
+
+[node name="World" type="Node2D"]
+
+[node name="Pausable" type="Node" parent="."]
+process_mode = 1
+
+[node name="Player" parent="Pausable" instance=ExtResource("1_fkish")]
+position = Vector2(552, 286)
+
+[node name="TreeHolder" type="Node" parent="Pausable"]
+
+[node name="Tree" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(677, 270)
+
+[node name="Tree2" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(511, 158)
+
+[node name="Tree3" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(630, 158)
+
+[node name="Tree4" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(398, 248)
+
+[node name="Tree5" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(348, 151)
+
+[node name="Tree6" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(174, 169)
+
+[node name="Tree7" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(201, 290)
+
+[node name="Tree8" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(114, 216)
+
+[node name="Tree9" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(260, 48)
+
+[node name="Tree10" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(367, 488)
+
+[node name="Tree11" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(339, 421)
+
+[node name="Tree12" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(552, 409)
+
+[node name="Tree13" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(487, 375)
+
+[node name="Tree14" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(877, 362)
+
+[node name="Tree15" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(837, 260)
+
+[node name="Tree16" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(788, 126)
+
+[node name="Tree17" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(663, 91)
+
+[node name="Tree18" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(956, 97)
+
+[node name="Tree19" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(887, 85)
+
+[node name="Tree20" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(1057, 213)
+
+[node name="Tree21" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(980, 208)
+
+[node name="Tree22" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(995, 450)
+
+[node name="Tree23" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(922, 506)
+
+[node name="Tree24" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(798, 477)
+
+[node name="Tree25" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(670, 555)
+
+[node name="Tree26" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(682, 479)
+
+[node name="Tree27" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(805, 544)
+
+[node name="Tree28" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(420, 545)
+
+[node name="Tree30" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(288, 534)
+
+[node name="Tree31" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(135, 548)
+
+[node name="Tree32" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(133, 437)
+
+[node name="Tree33" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(240, 411)
+
+[node name="Tree29" parent="Pausable/TreeHolder" instance=ExtResource("2_olgjt")]
+position = Vector2(540, 529)
+
+[node name="Slime" parent="Pausable" instance=ExtResource("3_bkryk")]
+position = Vector2(508, 291)
+
+[node name="PausedUI" type="Node" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -10
+z_as_relative = false
+offset_left = -247.0
+offset_top = -172.0
+offset_right = 1401.0
+offset_bottom = 832.0
+color = Color(0.0962047, 0.0962048, 0.0962047, 1)
+
+[node name="WorldBorder" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBorder"]
+position = Vector2(572.5, 19)
+shape = SubResource("RectangleShape2D_knfvo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="WorldBorder"]
+position = Vector2(21.5, 319.5)
+shape = SubResource("RectangleShape2D_nh86o")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="WorldBorder"]
+position = Vector2(1121.5, 316)
+shape = SubResource("RectangleShape2D_iychj")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="WorldBorder"]
+position = Vector2(548.5, 620)
+shape = SubResource("RectangleShape2D_w21qb")
